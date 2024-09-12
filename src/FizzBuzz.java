@@ -8,14 +8,14 @@ class FizzBuzz {
         // for (int i = 1; i < 100; i++) {
         int i = 1;
         int end = 100;
-        while (i < end) {
+        while (i <= end) {
             i = doFizzBuzz(i);
 
         }
 
     }
 
-    private static int doFizzBuzz(int i) {
+    public static int doFizzBuzz(int i) {
         // Note: we use "for" for "for loops" like in Python
         // set i = 1
         // seems like a while loop: while i < 100
@@ -30,24 +30,24 @@ class FizzBuzz {
             // We use && instead of Python's "and"
             // "if" is the same as in Python
 
-            i = i + 1;
             System.out.println("Fizz Buzz");
+            i = i + 1;
 
         } else if (divisibleBy3) {
             // We use "else if" instead of "elif"
 
-            i = i + 1;
             System.out.println("Fizz");
+            i = i + 1;
 
         } else if (divisibleBy5) {
 
-            i = i + 1;
             System.out.println("Buzz");
+            i = i + 1;
 
         } else {
 
-            i = i + 1;
             System.out.println(i);
+            i = i + 1;
 
         }
         return i;
